@@ -49,6 +49,4 @@ test:
 #
 production:
   <<: *default
-  database: heroku-mysql-app_production
-  username: heroku-mysql-app
-  password: <%= ENV['HEROKU-MYSQL-APP_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
