@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  use_doorkeeper
+  resources :skills
   root to: 'home#index'
   get 'home/index'
 
